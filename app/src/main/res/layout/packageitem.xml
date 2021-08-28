@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:padding="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="@dimen/_5sdp"
+    app:contentPadding="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+
+
+        <CheckBox
+            android:id="@+id/simpleCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+
+            android:theme="@style/checkBoxStyle" />
+
+        <TextView
+            android:id="@+id/tvSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5pt"
+            android:layout_toEndOf="@+id/simpleCheckBox"
+            android:fontFamily="@font/roboto"
+            android:padding="@dimen/_3sdp"
+            android:text="Daal - \u20B9 81"
+            android:textColor="@color/black_text"
+            android:textSize="@dimen/_15sdp" />
+
+        <!--   <ImageView
+               android:id="@+id/checkbox"
+               android:visibility="visible"
+               android:layout_width="@dimen/_20sdp"
+               android:layout_height="@dimen/_20sdp"
+               android:src="@drawable/ic_checked__1_" />
+
+           <ImageView
+               android:id="@+id/unCheck"
+               android:visibility="gone"
+               android:layout_width="@dimen/_20sdp"
+               android:layout_height="@dimen/_20sdp"
+               android:src="@drawable/uncheck" />-->
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
